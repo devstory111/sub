@@ -1,0 +1,68 @@
+<!--Author: wwww.developers.today 
+    Email:  contact@developers.today
+This is my third project on the html an css.
+25.03.2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css"> 
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Succesfully subscribed</title>  
+    </head>
+    <body>
+        <!--Main content-->
+         
+        <div class="main">
+            <div class="subscriber">
+             <span class="close">&#10005;</span>
+                <h3 id="message" >Thank you, you will ricieve updates to your email! &#x2705;</h3>
+                
+                
+            </div>
+       
+            <!-- code for to close pupup window-->
+
+            <script>
+                var closebtns = document.getElementsByClassName("close");
+                var i;
+                
+                for (i = 0; i < closebtns.length; i++) {
+                  closebtns[i].addEventListener("click", function() {
+                    this.parentElement.style.display = 'none';
+                  });
+                }
+                </script>
+
+
+
+        </div>
+
+        <!-- JS code for automatic popup window-->
+
+        <script>
+            window.addEventListener("load", function(){
+                setTimeout(
+                    function open(event){
+                        document.querySelector(".main").style.display = "block";
+                    },
+                    1000 
+                )
+            });
+            
+            </script>
+     
+
+    <!--Footer of site-->
+
+    <footer>
+        <div class="links">
+            <p>By:</p>
+            <a href="http://developers.today" target="_blank">Developers.Today</a>
+        </div>
+    </footer>
+    </body>
+    </html>
