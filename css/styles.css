@@ -121,6 +121,11 @@ h3 {
     font-family: "Trirong", serif;
 }
 
+/* change succesfully sent alert message */
+
+#message {
+    text-align: center;
+}
 
 p {
     font-family: "Trirong", serif;
